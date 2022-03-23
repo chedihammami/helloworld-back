@@ -1,7 +1,7 @@
 require('dotenv').config() ; 
 const mongoose = require('mongoose');
 
-    const devConnection = "mongodb://root:example@10.107.46.60:27017/user-account?authSource=admin"; 
+    const devConnection = "mongodb://root:example@10.110.201.105:27017/user-account?authSource=admin"; 
     mongoose.connect(devConnection, {
         useNewUrlParser: true , 
         useUnifiedTopology: true
