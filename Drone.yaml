@@ -1,0 +1,16 @@
+kind: pipeline
+name: default
+
+steps: 
+  - name : publish
+    image: plugins/docker
+    script:
+    dockerfile: Dockerfile
+    settings:
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      repo: chedihammami/helloworld-back-end
+      tags:
+        - '1.0'
