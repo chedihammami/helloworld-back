@@ -11,6 +11,6 @@ steps:
         from_secret: docker_username
       password:
         from_secret: docker_password
-      repo: chedihammami/helloworld-back-end
+      repo: chedihammami/helloworld-backend
       tags:
         - '1.0'
